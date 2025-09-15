@@ -1,0 +1,35 @@
+
+/* Seção da cotação do dólar (USD → BRL) */
+#usd-ticker {
+    background-color: transparent;
+}
+
+.ticker-card {
+    max-width: 680px;
+    border-radius: 12px;
+    /* Reuso do gradiente da classe .fundo do style.css */
+    background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.ticker-card h2 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.ticker-card .ticker-value {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+#usd-last-updated {
+    opacity: 0.8;
+}
+
+/* Hover sutil, consistente com .depoimento:hover */
+.ticker-card:hover {
+    transform: translateY(-2px);
+    transition: transform 160ms ease-in-out;
+}
